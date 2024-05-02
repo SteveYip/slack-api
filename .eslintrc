@@ -1,0 +1,20 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["airbnb/base", "plugin:prettier/recommended"],
+  "env": {
+    "es6": true,
+    "node": true,
+    "mocha": true
+  },
+  "ecmaFeatures": {
+    "classes": true,
+    "modules": true
+  },
+  "rules": {
+    "comma-dangle": 0,
+    "no-console": "off",
+    "no-unused-vars": "off",
+    "eqeqeq": "off",
+    "camelcase": "off"
+  }
+}
