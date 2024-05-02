@@ -40,7 +40,7 @@ const replyToSlack = async (req, res) => {
 
 const searchFromYoutube = async text => {
   try {
-    const search_url = `https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&key=AIzaSyAd0VrdcTzpHk0Zuvi507PfHU4PjXgxUAA&regionCode=HK&relevanceLanguage=zh-Hant&maxResults=1&q=Aimer ${text}`;
+    const search_url = `https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&key=${key}=HK&relevanceLanguage=zh-Hant&maxResults=1&q=Aimer ${text}`;
     const search = await axios.get(encodeURI(search_url));
     return search;
   } catch (err) {
